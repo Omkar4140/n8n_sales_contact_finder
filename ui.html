@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sales Contact Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      padding: 40px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label, input {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h2 align="center">Find Decision Maker Contacts</h2>
+
+<form action="https://YOUR_WEBHOOK_URL" method="POST">
+  <label for="company">Company Name:</label>
+  <input type="text" id="company" name="company" required>
+
+  <label for="domain">Company Domain:</label>
+  <input type="text" id="domain" name="domain" required placeholder="example.com">
+
+  <input type="submit" value="Find Contacts">
+</form>
+
+</body>
+</html>
